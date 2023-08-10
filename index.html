@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey-FORM</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill up the form!</p>
+    <form id="survey-form" action="nirmal.html" method="post">
+    <fieldset>
+        <label  id="name-label" for="name " >
+            Name: <input type="text" id="name" placeholder="Enter your name" required/>
+        </label>
+
+       <label  id="email-label" for="email" " required>
+            Email: <input type="email" id="email" placeholder="Enter your email" required/>
+        </label>
+
+<label  id="gender-label" for="gender" " required>
+            Gender: <input type="radio"  name="gend" value="male" /> Male
+            <input type="radio"  name="gend" value="female" /> Female </label>
+
+
+
+        <label  id="number-label" for="number" >
+            Number: <input type="number" id="number" min="12" max="114" placeholder="Number" required/>
+        </label>
+
+  <label for="intrested">
+            Intrested In: 
+       
+            <select id="dropdown">
+       <option value="" >select</option>
+<option value="1">Frontend Developer </option>
+<option value="2"> Backend Developer </option>
+ <option value="3">Fullstack Developer </option>
+            </select>
+            </label>
+
+
+          
+              What would you like to learn about? 
+            
+              <label for="React">
+                <input type="checkbox" value="1" name="react"/> React
+                </label>
+                <label for="Next.js">
+                <input type="checkbox" value="2" name="next"/> Next.js
+                </label>
+
+                <label for="nest">
+                <input type="checkbox" value="3" name="nest"/> Nest.js
+                </label>
+
+  <label for="suggest-label">  Any comments or suggestions ?
+    <textarea  id="suggest" name="suggestions" rows="3" cols="30" placeholder="I like codi"></textarea> 
+    </label>
+
+<button id="submit" type="submit">Submit
+    </fieldset>
+    </form>
+   
+
+   
+</body>
+</html>
